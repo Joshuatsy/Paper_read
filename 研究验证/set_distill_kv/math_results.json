@@ -1,0 +1,67 @@
+{
+  "status": "synthetic mathematical checks only",
+  "deletion_identity": {
+    "cases": 6400,
+    "max_vector_absolute_error": 1.7763568394002505e-15,
+    "max_squared_error_absolute_error": 1.3766765505351941e-14
+  },
+  "non_nested": {
+    "full_output": 1.75,
+    "rows": [
+      {
+        "budget": 1,
+        "retained": "A",
+        "output": 1.5,
+        "squared_error": 0.0625
+      },
+      {
+        "budget": 1,
+        "retained": "B",
+        "output": 2.5,
+        "squared_error": 0.5625
+      },
+      {
+        "budget": 1,
+        "retained": "C",
+        "output": 0.5,
+        "squared_error": 1.5625
+      },
+      {
+        "budget": 2,
+        "retained": "AB",
+        "output": 2.3333333333333335,
+        "squared_error": 0.34027777777777796
+      },
+      {
+        "budget": 2,
+        "retained": "AC",
+        "output": 1.0,
+        "squared_error": 0.5625
+      },
+      {
+        "budget": 2,
+        "retained": "BC",
+        "output": 1.6666666666666665,
+        "squared_error": 0.006944444444444469
+      },
+      {
+        "budget": 3,
+        "retained": "ABC",
+        "output": 1.75,
+        "squared_error": 0.0
+      }
+    ],
+    "best_sets": {
+      "1": "A",
+      "2": "BC",
+      "3": "ABC"
+    }
+  },
+  "critic": {
+    "max_gradient_absolute_error": 6.920158890366679e-11,
+    "max_projection_budget_error": 1.7763568394002505e-15,
+    "initial_predicted_risk": 2.7416665215397966,
+    "selected_predicted_risk": 0.6867340511373625,
+    "interpretation": "Only a surrogate-optimization check; not downstream VLM quality."
+  }
+}
